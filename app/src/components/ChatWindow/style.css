@@ -1,0 +1,4 @@
+.chat_window {
+    height: calc(100% - 66px);
+    position: relative;
+}

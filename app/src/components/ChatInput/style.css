@@ -1,0 +1,76 @@
+.chat_input {
+    height: 60px;
+    display: flex;
+}
+
+.chat_input .options {
+    width: 70px;
+    display: flex;
+}
+.chat_input .options .open_btn {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #35b2e3;
+    border: 1px solid #35b2e3;
+    border-radius: 50%;
+    font-weight: 300;
+    padding: 2px 2px 8px;
+    width: 40px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.chat_input .text_input {
+    width: calc(100% - 70px);
+}
+.chat_input .text_input input {
+    height: 100%;
+    width: calc(100% - 14px);
+    font-size: 1.25rem;
+    font-weight: 300;
+    border: 0;
+    padding: 0 6px;
+    outline: none;
+    border-left: 2px solid rgba(0, 0, 0, 0.15);
+}
+.chat_input .text_input input::placeholder {
+    color: rgba(0, 0, 0, 0.15);
+}
+
+
+.chat_options {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 2;
+}
+.chat_options .options_list {
+    background: white;
+    padding: 8px 16px;
+    width: 300px;
+    bottom: 15px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    left: 10px;
+    position: absolute;
+}
+.chat_options .options_list .option_item {
+    text-align: left;
+    padding: 6px 0;
+    display: flex;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.chat_options .options_list .option_item .icon img {
+    width: 30px;
+    margin-right: 4px;
+}
+.chat_options .options_list .option_item .item_name {
+    line-height: 30px;
+}
+.chat_options .empty_input {
+    visibility: hidden;
+    width: 0;
+    
+}

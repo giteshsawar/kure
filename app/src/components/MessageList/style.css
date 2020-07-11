@@ -1,0 +1,90 @@
+.messages {
+  height: calc(100% - 60px);
+  background: #f0f2f8;
+  position: relative;
+}
+
+.messages .message_list {
+  padding: 16px;
+}
+
+.message_box {
+  padding: 8px;
+}
+.message_box .message_content {
+  width: fit-content;
+  display: flex;
+}
+
+.sent {
+  margin-left: auto;
+}
+.message_content .message .time {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 3px;
+  text-align: right;
+  font-weight: 500;
+}
+
+.message_box .user_pic {
+  border-radius: 50%;
+  background: rgb(218, 95, 218);
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.message_box .content {
+  padding-right: 4px;
+}
+.message_box .content .user_name {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: right;
+  padding-right: 2px;
+}
+.message_box .content .message {
+  max-width: 400px;
+  background: #35b2e3;
+  color: white;
+  padding: 12px;
+  margin-top: 4px;
+  border-radius: 10px;
+  position: relative;
+}
+.message_box .content .message_text {
+  padding-right: 8px;
+  text-align: left;
+}
+.message_box .content .status {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  padding-top: 4px;
+  font-size: 0.8rem;
+}
+
+.sent .content .message {
+    border-top-right-radius: 0;
+}
+
+.received {
+  flex-direction: row-reverse;
+}
+.received .content {
+  padding-left: 4px;
+}
+.received .content .user_name {
+  text-align: left;
+}
+.received .content .message {
+    border-top-left-radius: 0;
+    background: #FFFFFF;
+    color: rgba(0, 0, 0, 0.7);
+}
+.received .content .time {
+  color: rgba(0, 0, 0, 0.5);
+}

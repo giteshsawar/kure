@@ -1,0 +1,107 @@
+.option_template {
+  position: relative;
+}
+.option_template .option {
+  background: white;
+  width: 450px;
+  margin: auto;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 20px;
+}
+.option .option_heading {
+  display: flex;
+  color: rgba(18, 40, 119, 0.9);
+  padding: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 1.2rem;
+}
+.option .option_heading .icon img {
+  width: 30px;
+  margin-right: 4px;
+}
+.option .option_heading .item_name {
+  line-height: 30px;
+}
+
+.option .option_form {
+  text-align: left;
+}
+.option_form .option_form_col {
+  padding: 16px 12px;
+}
+.option_form .option_label {
+  color: rgba(18, 40, 119, 0.4);
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.option_form .option_input {
+  padding-top: 8px;
+  position: relative;
+}
+.option_form .option_input input,
+.option_form .option_input .get_location {
+  border: 0;
+  border-bottom: 2px solid rgba(18, 40, 119, 0.15);
+  width: 98%;
+  padding: 6px;
+  font-size: 1.2rem;
+  color: rgba(12, 24, 66, 0.75);
+  outline: none;
+}
+.option_form .option_input .get_location {
+  color: rgba(18, 40, 119, 0.4);
+  text-transform: capitalize;
+  cursor: pointer;
+  background: white;
+  text-align: left;
+  font-weight: 300;
+}
+.option_form .option_input input::placeholder {
+  color: rgba(18, 40, 119, 0.4);
+  text-transform: capitalize;
+}
+.option_form .option_input .right_icon {
+  color: rgba(18, 40, 119, 0.4);
+  font-size: 1.4rem;
+  position: absolute;
+  right: 5%;
+  top: 10px;
+}
+
+.option_template .option_btn {
+  padding: 24px 0;
+  width: 450px;
+  margin: auto;
+}
+.option_btn .button_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.option_btn .button_group .btn {
+  border-radius: 100px;
+  text-transform: uppercase;
+  border: 0;
+  font-size: 1.1rem;
+  padding: 8px 32px;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+.option_btn .button_group .btn_cancel {
+  background: #e55b1e;
+}
+.option_btn .button_group .btn_send {
+  background: #cbd0e3;
+  margin-left: 24px;
+}
+
+.option_template .google_map_comp {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+}
