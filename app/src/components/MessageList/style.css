@@ -1,0 +1,156 @@
+.messages {
+  height: calc(100% - 60px);
+  background: #f0f2f8;
+  position: relative;
+}
+
+.messages .message_list {
+  padding: 16px;
+  height: calc(100% - 32px);
+  overflow-y: auto;
+}
+
+.message_box {
+  padding: 8px;
+}
+.message_box .message_content {
+  width: fit-content;
+  display: flex;
+}
+
+.sent {
+  margin-left: auto;
+}
+.message_content .message .time {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 3px;
+  text-align: right;
+  font-weight: 500;
+}
+
+.message_box .user_pic {
+  border-radius: 50%;
+  background: rgb(218, 95, 218);
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.message_box .content {
+  padding-right: 4px;
+}
+.message_box .content .user_name {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: right;
+  padding-right: 2px;
+}
+.message_box .content .message {
+  max-width: 400px;
+  background: #35b2e3;
+  color: white;
+  padding: 12px;
+  margin-top: 4px;
+  border-radius: 10px;
+  position: relative;
+}
+.message_box .content .message_text {
+  padding-right: 8px;
+  text-align: left;
+}
+.message_box .content .status {
+  color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  padding-top: 4px;
+  font-size: 0.8rem;
+}
+
+.sent .content .message {
+    border-top-right-radius: 0;
+}
+
+.received {
+  flex-direction: row-reverse;
+}
+.received .content {
+  padding-left: 4px;
+}
+.received .content .user_name {
+  text-align: left;
+}
+.received .content .message {
+    border-top-left-radius: 0;
+    background: #FFFFFF;
+    color: rgba(0, 0, 0, 0.7);
+}
+.received .content .time {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Distance message style */
+.distance_message_box {
+  padding: 0;
+}
+.distance_message_box .content .distance_message {
+  background: white;
+  width: 350px;
+  padding: 0;
+  border: 1px solid #8BC53D;
+}
+.distance_message_box .content .distance_message .message_text {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 8px;
+  padding: 12px;
+}
+.distance_message_box .content .distance_message .message_text .text {
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.distance_message_box .content .distance_message .message_text .icon img {
+  width: 30px;
+  margin-right: 4px;
+}
+.distance_message_box .content .distance_message .data {
+  color: black;
+  text-align: left;
+}
+.distance_message_box .content .distance_message .data .data_row {
+  padding: 12px;
+}
+.distance_message_box .content .distance_message .data .data_row .label {
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding-bottom: 4px;
+}
+.distance_message_box .content .distance_message .data .data_row .value {
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+.distance_message_box .content .distance_message .data .distance_row {
+  background: #8BC53D;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.distance_message_box .content .distance_message .data .distance_row .distance_num {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 8px;
+}
+.distance_message_box .content .distance_message .data .distance_row .distance_num .label {
+  color: white;
+}
+.distance_message_box .content .distance_message .data .distance_row .time {
+  color: white;
+}
